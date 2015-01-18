@@ -2,7 +2,7 @@ package Solutions2014;
 import java.util.Scanner;
 
 
-public class Problem3 {
+public class y2014p03 {
 
 	public static void main (String args[])
 	{

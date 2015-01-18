@@ -1,7 +1,7 @@
 package Solutions2014;
 
 
-public class Problem0 {
+public class y2014p00 {
 
 	public static void main (String args[])
 	{
