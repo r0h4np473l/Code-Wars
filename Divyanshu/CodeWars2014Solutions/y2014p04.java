@@ -44,6 +44,7 @@ public class y2014p04 {
 		for(int i =0; i<winners.size();i++){
 			System.out.print(winners.get(i) + " ");
 		}
+		System.exit(0);
 	}
 
 }
