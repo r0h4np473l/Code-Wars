@@ -30,4 +30,10 @@ public class StringsAndChars {
 		}
 		return sarr;
 	}
+	public static String removePunctuation(String s){
+		return s.replaceAll("\\p{P}", "");
+	}
+	public static String replaceAllNonAlphanumericCharacters(String str){
+		return str.replaceAll("[^a-zA-Z]", "");
+	}
 }
