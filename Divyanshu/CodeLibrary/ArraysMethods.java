@@ -4,16 +4,29 @@ import java.util.Arrays;
 
 
 public class ArraysMethods {
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		int[] l = {5,2,3};
 		String[] s = {"1","2","3"};
-		System.out.println(Arrays.binarySearch(l, 3)); //completes binary search
-		Arrays.toString(l); //or arrays.deepToString(2d array);
-		Arrays.sort(l); //This sorts the array, no need to make a new array to save it either. returns void. {5,2,3} becomes {2,3,5}
-		System.out.println(Arrays.toString(l));	//sorts
+		
+		//completes binary search
+		System.out.println(Arrays.binarySearch(l, 3));
+		
+		//or arrays.deepToString(2d array);
+		Arrays.toString(l); 
+		
+		//This sorts the array, no need to make a new array to save it, returns void. {5,2,3} becomes {2,3,5}
+		Arrays.sort(l); 
+		
+		System.out.println(Arrays.toString(l));	
+		
+		//reverses array
 		s = reverseArray(s);
+		
+		//prints array
 		System.out.println(Arrays.toString(s));
-		System.out.println(Arrays.deepToString(traverseArray(l)));
+		
+		//prints 2D array
+		System.out.println(Arrays.deepToString(traverseArray(l)));	
 	}
 	//reverses an object array
 	public static Object[] reverseArray(Object[] s){
