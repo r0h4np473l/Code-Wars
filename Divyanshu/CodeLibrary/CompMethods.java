@@ -1,3 +1,5 @@
+package CodeLibrary;
+
 
 public class CompMethods {
 	//Returns the reverse of a number i.e. 234 will return 432 
