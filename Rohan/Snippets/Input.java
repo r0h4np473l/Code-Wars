@@ -8,7 +8,7 @@ public class Input {
 	public static void main(String args[])
 	{
 		sentenceToWords("Test Sentence testing the sentence of course making sure it works");
-		
+
 	}
 
 	//Takes a String and breaks it up and then stores it in an ArrayList
@@ -16,13 +16,13 @@ public class Input {
 	{
 		if(sentence.charAt(sentence.length()-1)==' ')
 		{
-			
+			//do nothing
 		}
 		else
 		{
 			sentence= sentence + " ";
 		}
-		ArrayList <String> words = new ArrayList<String>();
+		ArrayList <String> words = new ArrayList<>();
 		boolean keepGoing=true;
 		while(keepGoing)		
 		{
@@ -48,6 +48,6 @@ public class Input {
 			System.out.println(array.get(i));
 		}
 	}
-	
-	
+
+
 }
