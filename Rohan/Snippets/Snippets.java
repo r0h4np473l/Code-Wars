@@ -2,7 +2,7 @@ package Snippets;
 
 import java.util.ArrayList;
 
-public class Input {
+public class Snippets {
 
 	//Used to test methods
 	public static void main(String args[])
