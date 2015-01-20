@@ -43,21 +43,28 @@ public class y2014p07 {
 	public static void letterToNumber(String line)
 	{
 		int j=0;
+		int jAdd=1;
 		while(j<length)
 		{
-			if((j++)==length)
+			System.out.println("J Counter" + j);
+			System.out.println("JAdd Counter" + jAdd);
+			System.out.println();
+			if((jAdd)==length)
 			{
 				//do nothing
 			}
-			else if(letterToNumberIndividually(line.charAt(j))<letterToNumberIndividually(line.charAt(j++)))
+			else if(letterToNumberIndividually(line.charAt(j))<letterToNumberIndividually(line.charAt(jAdd)))
 			{
-				totalNumber=totalNumber+= (letterToNumberIndividually(line.charAt(j))*letterToNumberIndividually(line.charAt(j++)));
+				totalNumber=totalNumber+= (letterToNumberIndividually(line.charAt(j))*letterToNumberIndividually(line.charAt(jAdd)));
+				System.out.println("Total number in else if statement" + totalNumber);
 			}
 			else
 			{
 				totalNumber=totalNumber+=letterToNumberIndividually(line.charAt(j));
+				System.out.println("Total number in else statement " + totalNumber);
 			}
 			j++;
+			jAdd++;
 		}
 	}
 	//converts the character to the equivalent int value
