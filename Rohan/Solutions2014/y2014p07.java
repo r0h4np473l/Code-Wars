@@ -33,13 +33,12 @@ public class y2014p07 {
 			else
 			{
 				//call numberToLetter method
-				//Showing Tony how to use Github and Eclipse. 
 			}
 		}
 		System.out.println(totalNumber);
 	}
 
-	
+
 	//converts the string to a number
 	public static void letterToNumber(String line)
 	{
@@ -47,25 +46,27 @@ public class y2014p07 {
 		int jAdd=1;
 		while(j<length)
 		{
-			System.out.println("J Counter" + j);
-			System.out.println("JAdd Counter" + jAdd);
-			System.out.println();
 			if((jAdd)==length)
 			{
 				//do nothing
+				totalNumber=totalNumber += letterToNumberIndividually(line.charAt(j));
 			}
 			else if(letterToNumberIndividually(line.charAt(j))<letterToNumberIndividually(line.charAt(jAdd)))
 			{
 				totalNumber=totalNumber+= (letterToNumberIndividually(line.charAt(j))*letterToNumberIndividually(line.charAt(jAdd)));
-				System.out.println("Total number in else if statement" + totalNumber);
+				j++;
+				jAdd++;
 			}
-			else
+			else if(letterToNumberIndividually(line.charAt(j))>letterToNumberIndividually(line.charAt(jAdd)))
 			{
 				totalNumber=totalNumber+=letterToNumberIndividually(line.charAt(j));
-				System.out.println("Total number in else statement " + totalNumber);
 			}
-			j++;
-			jAdd++;
+			else 
+			{
+				totalNumber=totalNumber+=letterToNumberIndividually(line.charAt(j));
+			}
+			j+=1;
+			jAdd+=1;
 		}
 	}
 	//converts the character to the equivalent int value
@@ -97,7 +98,7 @@ public class y2014p07 {
 		}
 		return 0;
 	}
-	
+
 	//converts a number to the equivalent alpha string
 	public static String numberToLetter()
 	{
