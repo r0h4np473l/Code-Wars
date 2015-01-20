@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
 public class y2014p07 {
 	static int totalNumber=0;
 	static int length=0;
+	static int exponent=0;
 
 	public static void main(String[] args) 
 	{
@@ -29,13 +30,13 @@ public class y2014p07 {
 			if(Pattern.matches("[a-zA-Z]+", line))
 			{
 				letterToNumber(line);
+				System.out.println(totalNumber);
 			}
 			else
 			{
-				//call numberToLetter method
+				System.out.print(numberToLetter(Integer.parseInt(line)));
 			}
 		}
-		System.out.println(totalNumber);
 	}
 
 
@@ -69,6 +70,7 @@ public class y2014p07 {
 			jAdd+=1;
 		}
 	}
+
 	//converts the character to the equivalent int value
 	public static int letterToNumberIndividually(char c)
 	{
@@ -100,9 +102,60 @@ public class y2014p07 {
 	}
 
 	//converts a number to the equivalent alpha string
-	public static String numberToLetter()
+	public static String numberToLetter(int number)
 	{
-		return "";
+		String convertedString="";
+		String numberToString=Integer.toString(new Integer(number));
+		int iAdd=1;
+		for(int i=0; i<numberToString.length(); i++)
+		{
+			int digit=Integer.parseInt(Character.toString(numberToString.charAt(i)));
+			exponent=numberToString.length()-iAdd;
+			if(digit>4)
+			{
+				convertedString=convertedString + "P" + loop(digit-5);
+			}
+			/*else if(digit==5 && numberToString.length()==1) 
+			{
+				convertedString=convertedString + "P";
+			}*/
+			else
+			{
+				convertedString=convertedString + loop(digit);
+			}
+			iAdd++;
+		}
+
+		if(convertedString.endsWith("I"))
+		{
+			return convertedString.substring(0, convertedString.length()-1);
+		}
+		return convertedString;
+	}
+
+	public static String loop(int times)
+	{
+		times++;
+		String addedLetter="";
+		String finalString="";
+		switch(exponent)
+		{
+		case 1: addedLetter= addedLetter + "D";
+		break;
+		case 2: addedLetter= addedLetter + "H";
+		break;
+		case 3: addedLetter= addedLetter + "C";
+		break;
+		case 4: addedLetter= addedLetter + "M";
+		break;
+		case 0: addedLetter= addedLetter + "I";
+		break;
+		}
+		for(int i=0; i<times; i++)
+		{
+			finalString=finalString + addedLetter;
+		}
+		return finalString;
 	}
 
 }
