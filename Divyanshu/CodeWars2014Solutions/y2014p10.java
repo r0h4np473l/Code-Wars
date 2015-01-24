@@ -9,13 +9,13 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class y2014p10 {
-
 	public static void main(String[] args) throws IOException {
 		BufferedReader f =new BufferedReader(new FileReader("y2014p10.txt"));
 		String line ="";
-		while((line=f.readLine()) != null){
+		while((line=f.readLine()) != null && !line.equals("0")){
 			StringTokenizer st = new StringTokenizer(line);
 			int lineLength = Integer.parseInt(st.nextToken());
+			
 			line=st.nextToken();
 			
 			while(st.hasMoreTokens()){
@@ -32,7 +32,7 @@ public class y2014p10 {
 			for(int i =1;i<lineLength;i++){
 				while(test>0){
 				try{
-					if(array[index]==null){
+					if(codedMessage[index]!=null){
 						test--;
 						index++;
 					}
@@ -45,25 +45,41 @@ public class y2014p10 {
 						while(codedMessage[index]==null){
 							index++;
 						}
-						test--;
+						//test--;
 				}
+				}
+				if(i==lineLength-1){
+					index=0;
+					while(codedMessage[index]==null){
+						index++;
+					}
 				}
 				if(index==lineLength){
 					index=0;
 					while(codedMessage[index]==null){
 						index++;
 					}
-					test--;
+					//test--;
 				}
+				while(codedMessage[index]==null){
+					index++;
+					if(index==lineLength){
+						index=0;
+						while(codedMessage[index]==null)
+							index++;
+					}
+				}
+
 				array[i] = codedMessage[index];
 				System.out.println(array[i]);
 				codedMessage[index]=null;
-				test = findAlphaNumber(array[i].charAt(0));
+				test = findAlphaNumber(array[i].charAt(0))-1;
 				System.out.println(Arrays.toString(array));
 				System.out.println(Arrays.toString(codedMessage));
 				
 			}
 		}
+		System.exit(0);
 	}
 	public static int findAlphaNumber(char s){
 		int val;
