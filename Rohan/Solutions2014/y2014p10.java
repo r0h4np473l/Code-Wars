@@ -14,40 +14,48 @@ public class y2014p10 {
 		Scanner scan= new Scanner(System.in);
 		String line=scan.nextLine();
 		input=new char[line.length()];
+		int i=0;
 		line.getChars(0, line.length(), input, 0);
 		for(int j=0; j<line.length(); j++)
 		{
-			for(int i=0; i<26; i++)
+			for(int i=0; i<alphabet.length; i++)
 			{
 				if(alphabet[i]==input[j])
 				{
-						if(outputSeparated.get(j)==input[j])
-						{
-							outputSeparated=shiftArrayList(outputSeparated, j);
-						}
-						else
-						{
-							System.out.println("Test");
-
-							outputSeparated.set(j, input[j]);
-						}
+					if(outputSeparated.get(j)==input[j])
+					{
+						outputSeparated=shiftArrayList(outputSeparated, j);
 					}
 					else
 					{
-						outputSeparated.add(input[j]);
+						outputSeparated.set(j, alphabet[i]);
 					}
 				}
+				else
+				{
+					outputSeparated.add(input[j]);
+				}
+				i++;
 			}
-		
-	System.out.println(outputSeparated);
+		}
+
+		System.out.println(outputSeparated);
 	}
 	public static ArrayList<Character> shiftArrayList(ArrayList<Character> arraylist, int index)
 	{
 		ArrayList <Character> temporaryArrayList = new ArrayList<>();
 		int iAdd=index+=1;
 		for(int i=index; i< arraylist.size(); i++){
-			temporaryArrayList.set(iAdd, arraylist.get(i));
+			if(temporaryArrayList.size()<iAdd)
+			{
+				temporaryArrayList.add(arraylist.get(i));
+			}
+			else
+			{
+				temporaryArrayList.set(iAdd, arraylist.get(i));
+			}
 			iAdd++;
+
 		}
 		return temporaryArrayList;
 	}
