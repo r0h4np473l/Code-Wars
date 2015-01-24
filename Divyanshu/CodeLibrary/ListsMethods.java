@@ -2,6 +2,7 @@ package CodeLibrary;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 
 public class ListsMethods {
 	public static void main(String[] args){
@@ -26,4 +27,20 @@ public class ListsMethods {
 		//returns index of key through binary search
 		Collections.binarySearch(x, 1);	
 	}
+	//Removes Duplicates from text
+    static ArrayList<String> removeDuplicates(ArrayList<String> list) {
+	// Store unique items in result
+	ArrayList<String> result = new ArrayList<>();
+	// Record encountered Strings in HashSet.
+	HashSet<String> set = new HashSet<>();
+	// Loop over argument list.
+	for (String item : list) {
+	    // If String is not in set, add it to the list and the set.
+	    if (!set.contains(item)) {
+		result.add(item);
+		set.add(item);
+	    }
+	}
+	return result;
+    }
 }

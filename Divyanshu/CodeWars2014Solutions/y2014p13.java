@@ -82,7 +82,7 @@ public class y2014p13 {
 			System.out.println(line+":"+allPerms.get(index));
 			}
 			catch(IndexOutOfBoundsException e){
-				System.out.println("list length: " +allPerms.size()+"\tlast"+allPerms.get(allPerms.size()-1));
+				System.out.println("list length: " +allPerms.size()+"\tlast:"+allPerms.get(allPerms.size()-1));
 			}
 		}
 		//exit
