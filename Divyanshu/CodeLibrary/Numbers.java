@@ -1,10 +1,6 @@
 package CodeLibrary;
 
 public class Numbers {
-
-	public static void main(String[] args) {
-
-	}
 	//checks if integer is prime
 	public static Boolean isPrime(int n){
 		for(int i=2;i<n/2;i++){
@@ -36,7 +32,6 @@ public class Numbers {
 		}
 		return sum;
 	}
-	
 	//Finds the number of divisors 
 	public static int divisors(int n){
 		int i, f=1; if(n==1){
@@ -51,7 +46,6 @@ public class Numbers {
 		return (f+1);
 		} 
 	}
-	
 	//Returns the largest prime factor of a number i.e. 13195 will return 29 
 	public static int largestPrimeFactor(int number) {
 		int i;

@@ -19,7 +19,7 @@ public class CompMethods {
 		return false;
 	}
 
-	// Returns a string as the reverse of that string, // ie ’michael’ will return ’leahcim’
+	// Returns a string as the reverse of that string, // ie "michael" will return "leahcim"
 	public static String reverseString(String s){
 		String reversed ="";
 		for (int i = s.length() - 1; i >= 0; i--) {
@@ -39,7 +39,7 @@ public class CompMethods {
 		}
 		return prev1;
 	}
-	//Finds the sum of a number’s digits i.e. 321 will return 6 
+	//Finds the sum of a number's digits i.e. 321 will return 6 
 	public static int sumOfDigits(int num) {
 		int sum = 0; 
 		int n = num; 

@@ -10,7 +10,6 @@ public class Palindromes {
 			}
 			return reverse;
 		}
-		
 		//Returns true if the number is a palindrome i.e. 9009 will return true 
 		public static boolean numPalindrome(int num){
 			if(num == reverse(num)){ 
@@ -18,8 +17,7 @@ public class Palindromes {
 			}
 			return false;
 		}
-
-		// Returns a string as the reverse of that string, // ie ’michael’ will return ’leahcim’
+		// Returns a string as the reverse of that string, // ie ���michael��� will return ���leahcim���
 		public static String reverseString(String s){
 			String reversed ="";
 			for (int i = s.length() - 1; i >= 0; i--) {

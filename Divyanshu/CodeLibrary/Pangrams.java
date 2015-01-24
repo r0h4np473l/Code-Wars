@@ -51,4 +51,3 @@ public class Pangrams {
 			return false;
 		}
 }
-

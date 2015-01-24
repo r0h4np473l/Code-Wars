@@ -42,17 +42,18 @@ public class y2014p13 {
     }
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader f =new BufferedReader(new FileReader("y2014p13.txt"));
+		//number of letters, first input
 		int numLet = Integer.parseInt(f.readLine());
+		//line for letters
 		String line = f.readLine();
+		//input letters into an array
 		StringTokenizer st= new StringTokenizer(line);
 		String[] letters = new String[numLet];
 		int i=0;
-		//creates the letter array of the letters given
 		while(st.hasMoreTokens()){
 			letters[i] = st.nextToken();
 			i++;
 		}
-		//System.out.println(Arrays.toString(letters));
 		//creates combinations of 5 for all in letter array, making sure none repeat
 		for(i=0;i<numLet;i++){
 			for(int j=1;j<numLet;j++){
@@ -64,24 +65,22 @@ public class y2014p13 {
 						for(int m=4;m<numLet;m++){
 							if(i!=m&&j!=m&&k!=m&&l!=m)
 							permutation("", letters[i]+letters[j]+letters[k]+letters[l]+letters[m]);
-		}}}}}
-		//sorts
+		}}}}}//end all loops
+		
+		//sorts list
 		Collections.sort(allPerms);
 		//removes duplicates
 		allPerms = removeDuplicates(allPerms);
 		
-		//System.out.println(allPerms.size());
-		//System.out.println(allPerms.toString());
-		
-		//Iterates through terms of K
+		//Iterates through terms of K in text file
 		int index=0;
 		while(((line=f.readLine())!=null) && !line.equals("0")){
 			//Prints Results
-			index = Integer.parseInt(line)-1;
+			index = Integer.parseInt(line)-1;	//0th index is 1st in this input style
 			try{
 			System.out.println(line+":"+allPerms.get(index));
 			}
-			catch(IndexOutOfBoundsException e){
+			catch(IndexOutOfBoundsException e){	//if number is outside of list
 				System.out.println("list length: " +allPerms.size()+"\tlast:"+allPerms.get(allPerms.size()-1));
 			}
 		}
