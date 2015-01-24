@@ -41,5 +41,6 @@ public class y2014p11 {
 				k++;
 			}
 		}
+		System.exit(0);
 	}
 }

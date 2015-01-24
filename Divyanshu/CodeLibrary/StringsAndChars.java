@@ -1,5 +1,6 @@
 package CodeLibrary;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -23,6 +24,20 @@ public class StringsAndChars {
 			sarr[i] = ""+s.charAt(i);
 		}
 		return sarr;
+	}
+	//recursion to get permutations of a string
+	//Recursive Code taken from http://learnprogramming.machinesentience.com/java_permutations_recursion/
+	private static ArrayList<String> allPerms = new ArrayList<String>();
+	private static void permutation(String prefix, String str){
+		int n = str.length();
+		if (n == 0){
+			//System.out.println(prefix);
+			allPerms.add(prefix);
+		}
+		else {
+			for (int i = 0; i < n; i++)
+				permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1));
+		}
 	}
 	//converts a string to an array of letters, input a maximum length of array and the string
 	public static String[] stringToLetterArray(String s){

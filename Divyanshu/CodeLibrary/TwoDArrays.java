@@ -15,7 +15,6 @@ public class TwoDArrays {
 		System.out.println(Arrays.deepToString(traverse2DArray(x2)));
 		//used for 1d arrays
 		System.out.println(Arrays.toString(f));
-
 	}
 	//converts 2d array to simple array, returns int[], arg: int[][]
 	public static int[] linearizeArray(int[][] x){

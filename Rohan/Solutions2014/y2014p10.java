@@ -14,7 +14,6 @@ public class y2014p10 {
 		Scanner scan= new Scanner(System.in);
 		String line=scan.nextLine();
 		input=new char[line.length()];
-		int i=0;
 		line.getChars(0, line.length(), input, 0);
 		for(int j=0; j<line.length(); j++)
 		{
