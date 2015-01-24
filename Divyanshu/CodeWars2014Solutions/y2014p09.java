@@ -26,8 +26,7 @@ public class y2014p09 {
 			//temp varibable to hold difference
 			int difference = 0;
 			//clear the answers from before
-			winners.clear();
-			
+			winners.clear();			
 			//iterate while the 2 numbers do not cross
 			while((num1>=num/2)&&(num2<=num/2)){			
 				//System.out.println(num1 + " " + num2);
@@ -46,6 +45,7 @@ public class y2014p09 {
 			//print the values
 			System.out.println(winners.get(0) + "+" + winners.get(1) + "=" + num);
 		}
+		System.exit(0);
 	}
 	public static Boolean isPrime(int n){
 		for(int i=2;i<n/2;i++){
