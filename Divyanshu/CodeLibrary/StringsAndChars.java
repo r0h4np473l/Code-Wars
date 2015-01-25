@@ -18,6 +18,7 @@ public class StringsAndChars {
 	}
 	//converts a string to an array of letters, input a maximum length of array and the string
 	//any left overs will be null
+	//BTW THERE IS ALREADY A METHOD FOR THIS. ITS CALLED getChars
 	public static String[] stringToLetterArray(String s,int max){
 		String[] sarr= new String[max];
 		for(int i =0;i<s.length();i++){
