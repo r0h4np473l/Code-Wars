@@ -69,7 +69,6 @@ public class y2014p10 {
 							index++;
 					}
 				}
-
 				array[i] = codedMessage[index];
 				System.out.println(array[i]);
 				codedMessage[index]=null;
