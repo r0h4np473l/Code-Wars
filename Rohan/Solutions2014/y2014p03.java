@@ -1,7 +1,7 @@
 package Solutions2014;
 import java.util.Scanner;
 
-
+//NOT WORKING CODE
 public class y2014p03 {
 
 	public static void main (String args[])
@@ -12,7 +12,7 @@ public class y2014p03 {
 		Scanner input= new Scanner(System.in);
 		for(int i=0; i<numOfTimes; i++)
 		{
-			
+//NOT WORKING CODE			
 		}
 		String time= input.nextLine();
 		if((Integer.parseInt(time.substring(0,time.indexOf(":")))<10))
@@ -31,6 +31,7 @@ public class y2014p03 {
 			break;
 			case "4": totalPowerConsumed+=(15*4);
 			break;
+//NOT WORKING CODE
 			case "5": totalPowerConsumed+=(15*5);
 			break;
 			case "6": totalPowerConsumed+=(15*6);
@@ -43,9 +44,12 @@ public class y2014p03 {
 			case ":": totalPowerConsumed +=20;
 			default: System.out.print("Error");
 			}
+//NOT WORKING CODE			
 			}
 			Integer.parseInt(time.substring(0,1));
 			System.out.println(totalPowerConsumed);
 	}
 	
 }
+
+//NOT WORKING CODE
