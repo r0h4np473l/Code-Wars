@@ -15,7 +15,7 @@ public class BufferedReadingSamples {
 		BufferedReader f = new BufferedReader(new FileReader("infile.txt"));
 		BufferedReader user = new BufferedReader(new InputStreamReader(System.in));
 		String l="";
-		//</3
+		
 		//iterating through file
 		while((l = f.readLine())!=null){
 			System.out.println(l);

@@ -9,8 +9,11 @@ public class StringsAndChars {
 		String s = "hello";
 		System.out.println(Arrays.toString(stringToLetterArray(s,10)));
 		System.out.println(Arrays.toString(stringToLetterArray(s)));
+		//System.out.println(s.getChars());
 	}
-	//used for capital letters
+	/**
+	 * used for capital letters
+	 */
 	public static int findAlphaNumber(char s){
 		int val;
 		val = ((int)s-(int)'A');
@@ -19,8 +22,17 @@ public class StringsAndChars {
 	//converts a string to an array of letters, input a maximum length of array and the string
 	//any left overs will be null
 	//BTW THERE IS ALREADY A METHOD FOR THIS. ITS CALLED getChars
+	//i looked at getChars and it confusing and too many parameters so w/e idrc
 	public static String[] stringToLetterArray(String s,int max){
 		String[] sarr= new String[max];
+		for(int i =0;i<s.length();i++){
+			sarr[i] = ""+s.charAt(i);
+		}
+		return sarr;
+	}	
+	//converts a string to an array of letters, input a maximum length of array and the string
+	public static String[] stringToLetterArray(String s){
+		String[] sarr= new String[s.length()];
 		for(int i =0;i<s.length();i++){
 			sarr[i] = ""+s.charAt(i);
 		}
@@ -40,14 +52,7 @@ public class StringsAndChars {
 				permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1));
 		}
 	}
-	//converts a string to an array of letters, input a maximum length of array and the string
-	public static String[] stringToLetterArray(String s){
-		String[] sarr= new String[s.length()];
-		for(int i =0;i<s.length();i++){
-			sarr[i] = ""+s.charAt(i);
-		}
-		return sarr;
-	}
+
 	public static String removePunctuation(String s){
 		return s.replaceAll("\\p{P}", "");
 	}

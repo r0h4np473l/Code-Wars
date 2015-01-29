@@ -28,34 +28,54 @@ public class ArraysMethods {
 		//prints 2D array
 		System.out.println(Arrays.deepToString(traverseArray(l)));	
 	}
-	//reverses an object array
-	public static Object[] reverseArray(Object[] s){
+	
+	/**
+	 * reverses an object array
+	 */
+	public static Object[] reverseArray(Object[] s)
+	{
 		Object[] x = new Object[s.length];
-		for(int i = s.length-1;i>=0;i--){
+		for(int i = s.length-1;i>=0;i--)
+		{
 			x[s.length-1-i] = s[i];
 		}
 		return x;
 	}
-	//reverses a string array
-	public static String[] reverseArray(String[] s){
+	
+	/**
+	* reverses a string array
+	*/
+	public static String[] reverseArray(String[] s)
+	{
 		String[] x = new String[s.length];
-		for(int i = (s.length-1);i>=0;i--){
+		for(int i = (s.length-1);i>=0;i--)
+		{
 			x[s.length-1-i] = s[i];
 		}
 		return x;
 	}
-	//reverses an int array {5,2,3} becomes {3,2,5}
-	public static int[] reverseArray(int[] s){
+	
+	/**
+	 * reverses an int array {5,2,3} becomes {3,2,5}
+	 */
+	public static int[] reverseArray(int[] s)
+	{
 		int[] x = new int[s.length];
-		for(int i = s.length-1;i>=0;i--){
+		for(int i = s.length-1;i>=0;i--)
+		{
 			x[s.length-1-i] = s[i];
 		}
 		return x;
 	}
-	//traverse an array {5,2,3} becomes {{5},{2},{3}}
-	public static int[][] traverseArray(int[] x){
+	
+	/**
+	 * traverse an array {5,2,3} becomes {{5},{2},{3}}
+	 */
+	public static int[][] traverseArray(int[] x)
+	{
 		int[][] s = new int[x.length][1];
-		for(int i=0;i<s.length;i++){
+		for(int i=0;i<s.length;i++)
+		{
 			s[i][0] =x[i]; 
 		}
 		return s;

@@ -27,7 +27,9 @@ public class ListsMethods {
 		//returns index of key through binary search
 		Collections.binarySearch(x, 1);	
 	}
-	//Removes Duplicates from text
+	/**
+	* Removes Duplicates from text
+	*/
     static ArrayList<String> removeDuplicates(ArrayList<String> list) {
 	// Store unique items in result
 	ArrayList<String> result = new ArrayList<>();

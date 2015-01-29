@@ -1,7 +1,10 @@
 package CodeLibrary;
 
 public class Numbers {
-	//checks if integer is prime
+	
+	/**
+	* checks if integer is prime
+	*/
 	public static Boolean isPrime(int n){
 		for(int i=2;i<n/2;i++){
 			if(n%i==0){
@@ -10,7 +13,10 @@ public class Numbers {
 		}
 		return true;
 	}
-	//Return the nth number in the fibonacci sequence 
+	
+	/**
+	* Return the nth number in the fibonacci sequence 
+	*/
 	public static long fibonacci(long n) {
 		long prev1=0;
 		long prev2=1;
@@ -21,7 +27,10 @@ public class Numbers {
 		}
 		return prev1;
 	}
-	//Finds the sum of a number���s digits i.e. 321 will return 6 
+
+	/**
+	 * Finds the sum of a number's digits i.e. 321 will return 6 
+	 */
 	public static int sumOfDigits(int num) {
 		int sum = 0; 
 		int n = num; 
@@ -32,7 +41,10 @@ public class Numbers {
 		}
 		return sum;
 	}
-	//Finds the number of divisors 
+	
+	/**
+	 * Finds the number of divisors 
+	 */
 	public static int divisors(int n){
 		int i, f=1; if(n==1){
 			return 1; 
@@ -46,7 +58,10 @@ public class Numbers {
 		return (f+1);
 		} 
 	}
-	//Returns the largest prime factor of a number i.e. 13195 will return 29 
+	
+	/**
+	 * Returns the largest prime factor of a number i.e. 13195 will return 29 
+	 */
 	public static int largestPrimeFactor(int number) {
 		int i;
 		for (i = 2; i <= number; i++) {
