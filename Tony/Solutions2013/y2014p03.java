@@ -11,7 +11,7 @@ public class y2014p03 {
 		int minute = input.nextInt();
 		int divider = 20;
 		
-		
+	
 	}
 
 }
