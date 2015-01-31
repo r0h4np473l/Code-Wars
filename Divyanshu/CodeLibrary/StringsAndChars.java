@@ -9,6 +9,8 @@ public class StringsAndChars {
 		String s = "hello";
 		System.out.println(Arrays.toString(stringToLetterArray(s,10)));
 		System.out.println(Arrays.toString(stringToLetterArray(s)));
+		s = s.toUpperCase();
+		s = s.toLowerCase();
 		//System.out.println(s.getChars());
 	}
 	/**
