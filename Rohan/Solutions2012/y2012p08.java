@@ -26,7 +26,7 @@ public class y2012p08 {
 		//while (line != "###")
 		while((line = f.readLine())!=null && !(line.equals("###")))
 		{
-			line=input.nextLine();
+			//line=input.nextLine();
 			countLetters(line);
 			sortedCount=insertionSort(count);
 			printHistogram(sortedCount);
