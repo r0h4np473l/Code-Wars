@@ -1,5 +1,9 @@
 package Solutions2012;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class y2012p08 {
@@ -10,16 +14,17 @@ public class y2012p08 {
 	static int[] lengths;
 	static String[] sortedCount;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-
+		BufferedReader f = new BufferedReader(new FileReader("y2012p08.txt"));
 		//Instantiation of variables
 		String line="";
 		
 		//Input
 		
 		Scanner input= new Scanner(System.in);
-		while (line != "###")
+		//while (line != "###")
+		while((line = f.readLine())!=null && !(line.equals("###")))
 		{
 			line=input.nextLine();
 			countLetters(line);
