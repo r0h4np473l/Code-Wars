@@ -19,22 +19,24 @@ public class y2012p09 {
 
 		char[] finalString;
 		// Input
-		Scanner input = new Scanner(System.in);
-		String inputString = input.nextLine();
-		//BufferedReader input = new BufferedReader(new FileReader("y2012p09.txt"));
-		//String inputString1 = input.readLine();
-		//String inputString = input.readLine();
-		int indexOfKey = inputString.indexOf("KEY ");
-		int indexOfDecodingString = indexOfKey += 4;
+		//Scanner input = new Scanner(System.in);
+		//String inputString = input.nextLine();
+		BufferedReader input = new BufferedReader(new FileReader("y2012p09.txt"));
+		String inputString1 = input.readLine();
+		String inputString = input.readLine();
+		//int indexOfKey = inputString.indexOf("KEY ");
+		//int indexOfDecodingString = indexOfKey += 4;
 
-		String decodingString = inputString.substring(indexOfDecodingString);
+		String decodingString = inputString;
+		//String decodingString = inputString.substring(indexOfDecodingString);
 		int shiftSize = 4;	//decodingString.length();
 
 		// Search and replace
-		String message = inputString.substring(0, indexOfKey-=4);
+		//String message = inputString.substring(0, indexOfKey-=4);
+		String message = inputString1;
 		int messageLength = message.length();
 		finalString = new char[messageLength];
-		message.getChars(0, indexOfKey, finalString, 0);
+		message.getChars(0, messageLength, finalString, 0);
 		int newLetterIndex;
 		Boolean foundCharacter=false;
 		for (int i = 0; i < messageLength; i++) 
@@ -75,7 +77,7 @@ public class y2012p09 {
 		{
 			System.out.print(finalString[i]);
 		}
-
+		System.out.println();
 	}
 
 }
