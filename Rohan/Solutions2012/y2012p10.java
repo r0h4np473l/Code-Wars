@@ -35,32 +35,27 @@ public class y2012p10 {
 	{
 		String tempInput=input;
 		String card="";
-		//boolean foundIt=false;
-		boolean endOfString=false;
+		boolean foundIt=false;
+		//boolean endOfString=false;
 
-		ArrayList<String> separatedString= new ArrayList<>();
-
-		while(!endOfString)
+		String [] wordsSeparated;
+		wordsSeparated = tempInput.split("\\s+");
+		for (int i = 0; i < wordsSeparated.length; i++) 
 		{
-			if(tempInput.indexOf(" ")==-1)
-			{
-				endOfString=true;
-			} 
-			card= tempInput.substring(0, tempInput.indexOf(" "));
-			separatedString.add(card);
-			tempInput= tempInput.substring(tempInput.indexOf(" ")+1);
-			//ISSUE: When it hits the final card, there is an issue because I cannot stop it correctly. It either runs infinitely or just goes out of bounds
+			wordsSeparated[i] = wordsSeparated[i].replaceAll("[^\\w]", "");
 		}
-
-		/*//int i=0;
-			while(!foundIt)
+		
+		for(int j=0; j<wordsSeparated.length; j++)
+		{
+			for(int q=0; q<52; q++)
 			{
-				if(card.equals(cardName[i]))
+				if(cardName[q].equals(wordsSeparated[j]))
 				{
-					count[i]= count[i]+=1;
-					i+=1;
+					count[j]= count[j]+=1;
 				}
-			}*/
+			}
+		}
+		
 	}
 }
 
@@ -70,8 +65,43 @@ public class y2012p10 {
 /*
  * Notes:
  * 
- * Create a 2h array that stores the card as a string, such as 7S and then the number of times the card shows up in the input.
+ * Create a 2D array that stores the card as a string, such as 7S and then the number of times the card shows up in the input.
  * Search the array for a number that isn't one, and if its 0 print it out as a missing card. If its a number that is greater than
  * one, print out that its an extra card.
  * 
  */
+
+//SCRAP CODE
+
+//ALTERNATE 1
+
+//ArrayList<String> separatedString= new ArrayList<>();
+
+		/*while(!endOfString)
+		{
+			if(tempInput.indexOf(" ")==-1)
+			{
+				endOfString=true;
+				card=tempInput;
+			} 
+			else
+			{
+				card= tempInput.substring(0, tempInput.indexOf(" "));
+			}
+			separatedString.add(card);
+			tempInput= tempInput.substring(tempInput.indexOf(" ")+1);*/
+		//}
+
+//ALTERNATE 2
+
+/*int j=0;
+int i=0;
+while(!foundIt)
+{
+	if(wordsSeparated[j].equals(cardName[i]))
+	{
+		count[i]= count[i]+1;
+	}
+	i+=1;
+}*/
+

@@ -6,16 +6,13 @@ public class y2013p01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int numShirts;
+		int priceTotal;
 		Scanner scan = new Scanner(System.in);
-		for(int x = 0; x < 4; x++){
-			int time = scan.nextInt();
-			if(time !=0){
-				double pop = 100*Math.sqrt(time) + 201/(time +1) +1;
-				System.out.println(time + " " + Math.round(pop));
-			}
-		} 
-
+		numShirts = scan.nextInt();
+		priceTotal = 8 * numShirts - 95;
+		System.out.println(priceTotal);
+		scan.close();
 	}
+
 }
-
-

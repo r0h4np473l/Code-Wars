@@ -39,6 +39,17 @@ public class Snippets {
 		}
 		printArraylistContents(words); //Uses the next method printArraylistContents to print out the contents of the ArrayList
 	}
+	//Split String into words and puts it in an array
+	static void sentenceToWordsInArray(String s){
+		s = "This is a sample sentence.";
+		String[] words = s.split("\\s+");
+		for (int i = 0; i < words.length; i++) {
+			// You may want to check for a non-word character before blindly
+			// performing a replacement
+			// It may also be necessary to adjust the character class
+			words[i] = words[i].replaceAll("[^\\w]", "");
+		}
+	}
 
 	//prints out the contents of the ArrayList
 	static void printArraylistContents(ArrayList array)
