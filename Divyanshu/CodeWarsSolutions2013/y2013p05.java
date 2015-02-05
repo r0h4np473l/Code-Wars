@@ -25,7 +25,6 @@ public class problem {
 			System.out.println(trib[userindex]);
 			}
 			catch(IndexOutOfBoundsException e){
-				System.out.println(0);
 				break;
 			}
 		}
