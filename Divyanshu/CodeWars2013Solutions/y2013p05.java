@@ -1,4 +1,4 @@
-package CodeWarsSolution2013;
+package CodeWars2013Solutions;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 //'Tribonacci' sequence
-public class problem {
+public class y2013p05 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader f = new BufferedReader(new FileReader(("y2013p05.txt")));
 		int[] trib = new int[30];
