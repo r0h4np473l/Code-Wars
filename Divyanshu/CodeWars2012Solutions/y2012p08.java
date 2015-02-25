@@ -12,10 +12,14 @@ public class y2012p08 {
 		BufferedReader f = new BufferedReader(new FileReader("y2012p08.txt"));
 		int[] letters = new int[26];
 		String line="";
+		//iterate through the end
 		while((line = f.readLine())!=null && !(line.equals("###")))
 		{
+			//delete the crap
 			line = replaceAllNonAlphanumericCharacters(line);
+			//make it all uppercase
 			line = line.toUpperCase();
+			//iterate through the letters of each and add into the letter freq array
 			for(int i=0;i<line.length();i++)
 			{
 				letters[findAlphaNumber(line.charAt(i))]++;
@@ -24,17 +28,19 @@ public class y2012p08 {
 		displayHistogram(letters);
 		System.exit(0);
 	}
-
+	//deletes all non letters from a string
 	public static String replaceAllNonAlphanumericCharacters(String str)
 	{
 		return str.replaceAll("[^a-zA-Z]", "");
 	}
+	//converts integer to char
 	public static int findAlphaNumber(char s)
 	{
 		int val;
 		val = ((int)s-(int)'A');
 		return val;
 	}
+	//Prints the problem in correct manner
 	public static void displayHistogram(int[] freqs)
 	{
 		int max;
