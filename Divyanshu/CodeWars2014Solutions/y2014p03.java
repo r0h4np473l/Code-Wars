@@ -1,6 +1,5 @@
 package CodeWars2014Solutions;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -9,7 +8,6 @@ public class y2014p03 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader f = new BufferedReader(new FileReader("y2014p03.txt"));
 		
-		String k="";
 		String line;
 		int numOfLines = Integer.parseInt(f.readLine());
 		for(int i=1;i<=numOfLines;i++){
@@ -30,6 +28,7 @@ public class y2014p03 {
 			
 		}
 		f.close();
+		System.exit(0);
 	}
 	public static void calculateMilliamps(String hour, String mins){
 		int numsOfSegments[] = {6,2,5,5,4,5,6,3,7,6};

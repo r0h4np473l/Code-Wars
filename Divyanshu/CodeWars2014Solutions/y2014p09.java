@@ -1,7 +1,6 @@
 package CodeWars2014Solutions;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -45,6 +44,7 @@ public class y2014p09 {
 			//print the values
 			System.out.println(winners.get(0) + "+" + winners.get(1) + "=" + num);
 		}
+		f.close();
 		System.exit(0);
 	}
 	public static Boolean isPrime(int n){

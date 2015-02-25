@@ -1,10 +1,8 @@
 package CodeWars2014Solutions;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 
@@ -44,6 +42,7 @@ public class y2014p04 {
 		for(int i =0; i<winners.size();i++){
 			System.out.print(winners.get(i) + " ");
 		}
+		f.close();
 		System.exit(0);
 	}
 

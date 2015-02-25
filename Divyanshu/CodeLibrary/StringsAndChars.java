@@ -48,7 +48,6 @@ public class StringsAndChars {
 		return sarr;
 	}
 	//recursion to get permutations of a string
-	//Recursive Code taken from http://learnprogramming.machinesentience.com/java_permutations_recursion/
 	private static ArrayList<String> allPerms = new ArrayList<String>();
 	private static void permutation(String prefix, String str){
 		int n = str.length();

@@ -1,6 +1,5 @@
 package CodeWars2014Solutions;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
@@ -41,6 +40,7 @@ public class y2014p11 {
 				k++;
 			}
 		}
+		f.close();
 		System.exit(0);
 	}
 }

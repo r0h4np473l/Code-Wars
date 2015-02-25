@@ -31,6 +31,8 @@ public class y2013p12 {
 				System.out.println(line+" is *not* a MCP");
 			}
 		}
+		f.close();
+		System.exit(0);
 	}
 	public static Boolean palindrome(String s){
 		if(s.equals(reverseString(s))){

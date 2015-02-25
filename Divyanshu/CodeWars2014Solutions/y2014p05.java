@@ -1,10 +1,8 @@
 package CodeWars2014Solutions;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
 
 public class y2014p05 {
@@ -32,6 +30,7 @@ public class y2014p05 {
 			else
 				System.out.println("NEITHER: " + line);
 		}
+		f.close();
 		System.exit(0);
 	}
 	//deletes spaces and punctuation

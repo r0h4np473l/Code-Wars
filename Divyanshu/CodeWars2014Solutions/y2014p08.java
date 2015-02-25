@@ -28,6 +28,7 @@ public class y2014p08 {
 			//print results
 			System.out.println(tokens.get(tokens.size()-N));
 		}
+		f.close();
 		System.exit(0);
 	}
 }

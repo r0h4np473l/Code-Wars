@@ -1,7 +1,6 @@
 package CodeWars2014Solutions;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -37,6 +36,7 @@ public class y2014p06 {
 			//print results
 			System.out.println(count+":"+origLine);	
 		}
+		f.close();
 		System.exit(0);
 	}
 }

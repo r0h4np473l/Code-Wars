@@ -53,6 +53,7 @@ public class y2012p09 {
 		}
 		//print
 		System.out.println(tempDecipher);
+		f.close();
 		//exit program
 		System.exit(0);
 	}
