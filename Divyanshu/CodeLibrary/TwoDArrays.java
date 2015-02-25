@@ -1,5 +1,9 @@
 package CodeLibrary;
-
+/**
+ * @author Divyanshu
+ * @description Using 2D arrays for stuff.
+ * CodeWars 2015
+ */
 import java.util.Arrays;
 
 

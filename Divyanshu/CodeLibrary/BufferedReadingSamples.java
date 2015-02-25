@@ -1,4 +1,9 @@
 package CodeLibrary;
+/**
+ * @author Divyanshu Gandhi
+ * @description Has methods for BufferedReader. Looping through 
+ * 2015 Codewars
+ */
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

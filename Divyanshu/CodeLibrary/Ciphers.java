@@ -1,5 +1,9 @@
 package CodeLibrary;
-
+/**
+ * 
+ * @author Divyanshu
+ * @description Holds all cipher codes: morse and caesar shifts.
+ */
 public class Ciphers {
 	public static String convertToMorse(String s){
 		String[] morse = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};

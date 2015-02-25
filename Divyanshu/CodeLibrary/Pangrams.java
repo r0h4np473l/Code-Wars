@@ -1,5 +1,9 @@
 package CodeLibrary;
-
+/**
+ * @author Divyanshu Gandhi
+ * @description All the stuff needed for pangrams, strings with every single letter used.
+ * CodeWars 2015
+ */
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,4 +1,12 @@
 package CodeLibrary;
+/**
+ * @author Divyanshu Gandhi
+ * @description Program for creating a letter frequency table and also prints a histogram with
+ * asterisks. Letter frequency meaning an array to represent number of times a letter shows up.
+ * eg, index of 'A' in the array will be 0 and it will hold the number of times 'A' shows up in
+ * the string.
+ * Codewars 2015
+ */
 
 import java.io.BufferedReader;
 import java.io.FileReader;

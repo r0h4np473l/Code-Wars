@@ -1,5 +1,12 @@
 package CodeLibrary;
-
+/**
+ * @author Divyanshu Gandhi
+ * @description Used for strings and stuff. Converting char to int so that 'A'=0. Also recursive
+ * string permutations and converting a string to a letter array. Refining strings, taking out punctuation 
+ * and/or taking out everything thats not a letter.
+ * 
+ * CodeWars 2015
+ */
 import java.util.ArrayList;
 import java.util.Arrays;
 

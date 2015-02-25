@@ -1,5 +1,9 @@
 package CodeLibrary;
-
+/**
+ * 
+ * @author Ross Pantone
+ * @Description Has some math stuff, repeated into my libraries.
+ */
 
 public class CompMethods {
 	//Returns the reverse of a number i.e. 234 will return 432 

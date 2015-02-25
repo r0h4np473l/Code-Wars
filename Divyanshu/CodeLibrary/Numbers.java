@@ -1,5 +1,10 @@
 package CodeLibrary;
-
+/**
+ * 
+ * @author Divyanshu
+ * @description Lots of numbers, primes, fibonaccis, sums, reverses, etc. etc.
+ * Codewars 2015
+ */
 public class Numbers {
 	
 	/**

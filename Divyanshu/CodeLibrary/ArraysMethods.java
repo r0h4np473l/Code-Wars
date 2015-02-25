@@ -1,5 +1,11 @@
 package CodeLibrary;
 
+/**
+ * @author Divyanshu Gandhi
+ * Description: Has methods for arrays, reversing and traversing.
+ * 2015 Codewars
+ */
+
 import java.util.Arrays;
 
 

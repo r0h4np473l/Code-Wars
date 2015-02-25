@@ -1,5 +1,9 @@
 package CodeLibrary;
-
+/**
+ * @author Divyanshu Gandhi
+ * @description Has a bunch of list methods. One user defined for removing duplicates.
+ * Codewars 2015
+ */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -27,9 +31,7 @@ public class ListsMethods {
 		//returns index of key through binary search
 		Collections.binarySearch(x, 1);	
 	}
-	/**
-	* Removes Duplicates from text
-	*/
+	//Removes Duplicates from text
     static ArrayList<String> removeDuplicates(ArrayList<String> list) {
 	// Store unique items in result
 	ArrayList<String> result = new ArrayList<>();
