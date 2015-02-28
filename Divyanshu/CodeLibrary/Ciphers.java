@@ -6,7 +6,8 @@ package CodeLibrary;
  */
 public class Ciphers {
 	public static String convertToMorse(String s){
-		String[] morse = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+		String[] morse = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--",
+				"-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
 		String morseString="";
 		for(int i=0;i<s.length();i++){ //iterate through letters
 			try{//takes care of spaces and punctuation
