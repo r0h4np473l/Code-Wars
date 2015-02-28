@@ -81,7 +81,6 @@ public class Numbers {
 	return i;
 	}
 	/**
-	 * 
 	 * @param x
 	 * @param s
 	 * @return rounded double to the s'th place
