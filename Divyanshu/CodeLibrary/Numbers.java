@@ -6,6 +6,9 @@ package CodeLibrary;
  * Codewars 2015
  */
 public class Numbers {
+	public static void main(String[] args){
+		System.out.println(round(10.43,1));
+	}
 	
 	/**
 	* checks if integer is prime
@@ -76,5 +79,17 @@ public class Numbers {
 			} 
 		}
 	return i;
+	}
+	/**
+	 * 
+	 * @param x
+	 * @param s
+	 * @return rounded double to the s'th place
+	 */
+	public static double round(double x,int s){
+		double l =x;
+		l=(int)(l*Math.pow(10,s));
+		l=l/Math.pow(10,s);
+		return l;
 	}
 }
