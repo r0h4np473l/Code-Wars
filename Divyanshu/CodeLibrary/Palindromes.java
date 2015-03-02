@@ -1,6 +1,5 @@
 package CodeLibrary;
 /**
- * 
  * @author Divyanshu Gandhi
  * @description All the stuff needed for testing palindromes.
  * CodeWars 2015

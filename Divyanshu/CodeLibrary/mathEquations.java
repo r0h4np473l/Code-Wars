@@ -21,6 +21,15 @@ public class mathEquations {
 	public static double discriminant(double a, double b, double c){
 		return  Math.pow(b,2) - 4*a*c;
 	}
+	public static double distance(double x, double x0, double y, double y0){
+		return Math.sqrt(Math.pow(x-x0, 2)+Math.pow(y-y0, 2));
+	}
+	public static double cosLaw(double a, double b, double c){
+		return Math.acos((Math.pow(a,2) + Math.pow(b,2) - Math.pow(c, 2))/(2 * a * b)); 
+	}
+	public static double genTriArea(double a, double b, double w){
+		return (a*b*Math.sin(w)/2);
+	}
 	
 
 }

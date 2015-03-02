@@ -42,7 +42,6 @@ public class Numbers {
 	public static int sumOfDigits(int num) {
 		int sum = 0; 
 		int n = num; 
-		int t = n; 
 		while (n > 0){
 			long p = n % 10;
 			sum = (int) (sum + p); n /= 10;
@@ -90,5 +89,15 @@ public class Numbers {
 		l=(int)(l*Math.pow(10,s));
 		l=l/Math.pow(10,s);
 		return l;
+	}
+	/**
+	 * factorial
+	 */
+	public static long factorial(int n)
+	{
+		long f = 1;
+		while (n > 1)
+			f *= n--;
+		return f;
 	}
 }
