@@ -12,7 +12,7 @@ public class y2013p07 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader f = new BufferedReader(new FileReader("y2013p07.txt"));
-		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("outfile.txt")));
+		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("y2013p07out.txt")));
 		String line="";
 		StringTokenizer st = new StringTokenizer(line);
 		int h=0;
@@ -28,9 +28,11 @@ public class y2013p07 {
 			}
 			if((""+min2).length()==1){
 				System.out.println(h+":0"+min);
+				out.println(h+":0"+min);
 			}
 			else {
 				System.out.println(h+":"+min);
+				out.println(h+":"+min);
 			}	
 		}
 		f.close();
