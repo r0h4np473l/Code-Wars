@@ -39,7 +39,15 @@ public class y2011p11 {
 				}
 			}
 		}
-		
+		for(int i = 0;i<nameCount;i++){
+			for(int j = 1;j<nameCount;j++){
+				for(int k = 2; k<nameCount;k++){
+					for(int l = 3; l<nameCount;l++){
+						
+					}
+				}
+			}
+		}
 		f.close();
 		out.close();
 		System.exit(0);
