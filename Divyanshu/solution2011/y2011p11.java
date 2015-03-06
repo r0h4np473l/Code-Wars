@@ -44,4 +44,11 @@ public class y2011p11 {
 		out.close();
 		System.exit(0);
 	}
+    public static int search(int[] input, int key){
+    	for(int i =0; i<input.length;i++){
+    		if(input[i]==key)
+    			return i;
+    	}
+    	return -1;
+    }
 }
