@@ -29,6 +29,7 @@ public class LetterFrequencyHist {
 		}
 		displayHistogram(letters);
 		System.exit(0);
+		f.close();
 	}
 
 	public static String replaceAllNonAlphanumericCharacters(String str)

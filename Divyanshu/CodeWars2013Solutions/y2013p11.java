@@ -16,27 +16,36 @@ public class y2013p11 {
 		System.out.println(line);
 		int numLines = Integer.parseInt(line);	//7 lines
 		String word = "";
+		//iterate through file line by line
 		for(int i =0;i<numLines;i++){
+			//create the text line
 			line = f.readLine();
 			line=line.replace(".","");
-			String totalString="";
+			String totalString="";		//string to hold the processed line
+			//create tokenized string with new line
 			StringTokenizer st = new StringTokenizer(line);
+			//iterate through the words
 			while(st.hasMoreTokens()&&(word = st.nextToken())!=null){
 				totalString+=word+" ";
+				//if the word is 'is'
 				if(word.equals("is")){
+					//if the word after is not 'not' then write not
 					if(st.hasMoreTokens() && !((word = st.nextToken()).equals("not")))
 						totalString+=("not " + word +" ");
-					else{
+					else{ 	//if the word is not 'not'
+						// if theres a word next
 						if(st.hasMoreTokens()){
-						word=st.nextToken();
-						totalString+=(word+" ");
+							word=st.nextToken();
+							totalString+=(word+" ");
 						}
 					}
 				}
 			}
+			//print it while removing the extra space at the end and adding a period 
 			System.out.println(totalString.substring(0,totalString.length()-1)+".");
 			out.println(totalString.substring(0,totalString.length()-1)+".");
 		}
+		//close
 		f.close();
 		out.close();
 		System.exit(0);

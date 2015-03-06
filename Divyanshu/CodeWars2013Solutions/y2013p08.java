@@ -9,10 +9,13 @@ import java.io.PrintWriter;
 
 public class y2013p08 {
 	public static void main(String[] args) throws IOException{
+		//file declarations
 		BufferedReader f = new BufferedReader(new FileReader("y2013p08.txt"));
 		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("y2013p08out.txt")));
+		//letters array as a letter frequency hash
 		int[] letters = new int[26];
 		String line="";
+		//iterate through file
 		while((line = f.readLine())!=null && !(line.equals(". ")))
 		{
 			letters = new int[26];

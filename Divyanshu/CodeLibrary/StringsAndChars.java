@@ -1,7 +1,7 @@
 package CodeLibrary;
 /**
  * @author Divyanshu Gandhi
- * @description Used for strings and stuff. Converting char to int so that 'A'=0. Also recursive
+ * @description Used for strings and stuff. Converting char to int so that 'A'=0 'B'=1 etc. Also recursive
  * string permutations and converting a string to a letter array. Refining strings, taking out punctuation 
  * and/or taking out everything thats not a letter.
  * 

@@ -1,10 +1,8 @@
 package CodeWars2012Solutions;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
 public class y2012p08 {
 	public static void main(String[] args) throws IOException 
@@ -27,6 +25,7 @@ public class y2012p08 {
 		}
 		displayHistogram(letters);
 		System.exit(0);
+		f.close();
 	}
 	//deletes all non letters from a string
 	public static String replaceAllNonAlphanumericCharacters(String str)

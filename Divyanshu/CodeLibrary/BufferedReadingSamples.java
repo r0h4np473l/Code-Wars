@@ -35,10 +35,15 @@ public class BufferedReadingSamples {
 		StringTokenizer st = new StringTokenizer(l);
 		while(st.hasMoreTokens()){
 			token = st.nextToken();
+			System.out.println(token);
 		}
 		
 		//output
 		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("outfile.txt")));
 		out.print("Hello");
+		
+		//close file declarations
+		f.close();
+		out.close();
 	}
 }

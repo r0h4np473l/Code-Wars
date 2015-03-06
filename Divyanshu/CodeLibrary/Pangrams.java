@@ -29,6 +29,8 @@ public class Pangrams {
 				else
 					System.out.println("NEITHER: " + line);
 			}
+			f.close();
+			System.exit(0);
 		}
 		//returns text without puncutation and spaces
 		public static String replaceAllNonAlphanumericCharacters(String str){

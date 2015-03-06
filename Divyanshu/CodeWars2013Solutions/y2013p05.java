@@ -21,7 +21,7 @@ public class y2013p05 {
 		while((line = f.readLine())!=null){
 			userindex=Integer.parseInt(line);
 			try{
-			System.out.println(trib[userindex]);
+				System.out.println(trib[userindex]);
 			}
 			catch(IndexOutOfBoundsException e){
 				break;
