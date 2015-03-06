@@ -6,8 +6,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
 
 public class y2011p07 {
 
@@ -20,7 +18,6 @@ public class y2011p07 {
 		
 		while(!(line=f.readLine()).equals(".")){
 		}
-
 		
 		f.close();
 		out.close();
