@@ -19,7 +19,6 @@ public class y2011p07 {
 		String key= "QWERTYUIOPASDFGHJKLZXCVBNM";
 		
 		while(!(line=f.readLine()).equals(".")){
-		listOfArrays.add(line);
 		}
 
 		
