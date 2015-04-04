@@ -1,4 +1,7 @@
 package CodeLibrary;
+
+import java.util.ArrayList;
+
 /**
  * 
  * @author Divyanshu
@@ -8,6 +11,7 @@ package CodeLibrary;
 public class Numbers {
 	public static void main(String[] args){
 		System.out.println(round(10.43,1));
+		System.out.println(primeFactors(40));
 	}
 	
 	/**
@@ -100,4 +104,36 @@ public class Numbers {
 			f *= n--;
 		return f;
 	}
+	/**
+	 * 
+	 * @param p
+	 * @param q
+	 * @return gcd of p and q through eucilids algorithm
+	 */
+    public static int gcd(int p, int q) {
+        while (q != 0) {
+            int temp = q;
+            q = p % q;
+            p = temp;
+        }
+        return p;
+    }
+    /**
+     * @return prime factors of a positive integer in Java.
+     * @input 40
+     * @output 2, 5
+     */
+    public static ArrayList<Integer> primeFactors(long number) {
+        ArrayList<Integer> primefactors = new ArrayList<Integer>();
+        long copyOfInput = number;
+        for (int i = 2; i <= copyOfInput; i++) {
+            if (copyOfInput % i == 0) {
+                primefactors.add(i); // prime factor
+                copyOfInput /= i;
+                i--;
+            }
+        }
+        return primefactors;
+    }
+
 }

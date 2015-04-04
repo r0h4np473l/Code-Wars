@@ -30,6 +30,12 @@ public class mathEquations {
 	public static double genTriArea(double a, double b, double w){
 		return (a*b*Math.sin(w)/2);
 	}
-	
+	public static double parallelResistors(double[] resistors){
+		double sum = 0;
+		for(int i = 0; i < resistors.length;i++){
+			sum += 1.0/resistors[i];
+		}
+		return 1 / sum;
+	}
 
 }

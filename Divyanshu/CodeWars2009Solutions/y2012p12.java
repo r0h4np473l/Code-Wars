@@ -98,7 +98,6 @@ public class y2012p12 {
     		}
     	}
     	displayHist(stringMaxes,maxes);
-
     }
 	public static void displayHist(String[] stringMaxes, int[] maxes){
 		for(int i = 0;i<maxes.length;i++){
