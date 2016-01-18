@@ -13,12 +13,14 @@ import java.util.Arrays;
 
 public class StringsAndChars {
 	public static void main(String[] args){
-		String s = "hello";
-		System.out.println(Arrays.toString(stringToLetterArray(s,10)));
-		System.out.println(Arrays.toString(stringToLetterArray(s)));
-		s = s.toUpperCase();
-		s = s.toLowerCase();
+		String s = "abcd";
+		//System.out.println(Arrays.toString(stringToLetterArray(s,10)));
+		//System.out.println(Arrays.toString(stringToLetterArray(s)));
+		//s = s.toUpperCase();
+		//s = s.toLowerCase();
 		//System.out.println(s.getChars());
+		permutation("",s);
+		System.out.println(allPerms.toString());
 	}
 	/**
 	 * used for capital letters
@@ -52,7 +54,7 @@ public class StringsAndChars {
 	private static void permutation(String prefix, String str){
 		int n = str.length();
 		if (n == 0){
-			//System.out.println(prefix);
+			System.out.println(prefix);
 			allPerms.add(prefix);
 		}
 		else {
